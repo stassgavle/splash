@@ -345,6 +345,24 @@ template {
 /* end of normalize */
 
 
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  height: 100%;
+}
+
+.wrapper {
+  margin: 20px;
+}
+
 h1 {
   font-family: 'Times New Roman', Times, serif;
   letter-spacing: 1px;
@@ -353,3 +371,19 @@ h1 {
 p {
   font-family: Helvetica, Arial, sans-serif;
 }
+
+.logo-container {
+  text-align: center;
+  break;
+}
+
+#logo {
+  width: 200px;
+}
+
+.content {
+  max-width: 500px;
+  text-align: center;
+  display: inline-block;
+}
+

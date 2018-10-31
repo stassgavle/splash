@@ -345,6 +345,7 @@ template {
 /* end of normalize */
 
 
+
 html {
   height: 100%;
   min-height: 100%;
@@ -355,8 +356,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 500px;
-  height: 100%;
+  min-height: 100%;
 }
 
 .wrapper {
@@ -424,18 +424,22 @@ p {
 
 .extra-info ul li {
   padding: 0;
-}
-
-.list-left {
-  text-align: left;
-}
-
-.list-center {
   text-align: center;
 }
 
-.list-right {
+.extra-info ul:first-child li {
+  text-align: left;
+}
+
+.extra-info ul:last-child li {
   text-align: right;
+}
+
+@media screen and (max-width: 500px) {
+  .extra-info { flex-direction: column; }
+  .extra-info ul { margin-top: 15px; }
+  .extra-info ul:first-child li { text-align: center; }
+  .extra-info ul:last-child li { text-align: center; }
 }
 
 

@@ -365,7 +365,12 @@ body {
 
 h1 {
   font-family: 'Times New Roman', Times, serif;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
+}
+
+.text-sub {
+  letter-spacing: 0.2em;
+  font-size:  20px;
 }
 
 p {
@@ -374,7 +379,6 @@ p {
 
 .logo-container {
   text-align: center;
-  break;
 }
 
 #logo {
@@ -382,12 +386,60 @@ p {
 }
 
 .content {
-  max-width: 500px;
+  max-width: 550px;
   text-align: center;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-text-container {
+  display: block;
+  text-align: center;
+}
+
+.content .text-header {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .extra-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 10vh;
+  margin-bottom: 2vh;
+}
+
+.extra-info ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.extra-info ul li {
+  padding: 0;
+}
+
+.list-left {
+  text-align: left;
+}
+
+.list-center {
+  text-align: center;
+}
+
+.list-right {
+  text-align: right;
+}
+
+
+.update-info {
   animation-name: slideInFromBottom;
   animation-duration: 2s;
   animation-delay: 2s;

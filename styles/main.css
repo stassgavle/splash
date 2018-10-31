@@ -354,13 +354,17 @@ h1 {
   font-size:  20px;
 }
 
-p {
-  font-family: Helvetica, Arial, sans-serif;
+hr {
+  visibility: visible;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 html {
   height: 100%;
   min-height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -445,10 +449,9 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 550px;
-  /* margin-top: 10vh; */
+  max-width: 650px;
   margin-bottom: 2vh;
-  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .extra-info ul {
